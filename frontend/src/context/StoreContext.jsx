@@ -5,7 +5,7 @@ const StoreContextProvider = (props) => {
     const [cartitems, setcartitems] = useState({})
     const [token, settoken] = useState("");
     const [food_list, setfood_list] = useState([])
-    const url = "http://localhost:4000"
+    const url = "https://tomato-food-delivery-mern-backendd.onrender.com"
     const addToCart = async(itemID) =>{
         if(!cartitems[itemID]){
             setcartitems((prev) => ({...prev,[itemID]:1}))
